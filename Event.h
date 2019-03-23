@@ -144,7 +144,7 @@ namespace nmea {
 		Event() : enabled(true)
 		{}
 
-		virtual ~Event() 
+		virtual ~Event()
 		{}
 
 		Event(const Event& ref) 	{

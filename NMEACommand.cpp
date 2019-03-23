@@ -7,7 +7,7 @@
  *  See the license file included with this source.
  */
 
-#include <nmeaparse/NMEACommand.h>
+#include "NMEACommand.h"
 #include <iomanip>
 #include <sstream>
 
@@ -15,9 +15,9 @@ using namespace std;
 using namespace nmea;
 
 
-NMEACommand::NMEACommand(){};
+NMEACommand::NMEACommand() = default;;
 
-NMEACommand::~NMEACommand(){};
+NMEACommand::~NMEACommand() = default;;
 
 string NMEACommand::toString(){
 	return addChecksum(message);
